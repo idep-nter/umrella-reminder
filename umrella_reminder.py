@@ -23,8 +23,7 @@ def umbrella():
         smtpObj.login('xxx', sys.argv[1])
         body = 'Subject = rain\nDon\'t forget to take your umbrella today.'
         for email in emails:
-            sendmail = smtpObj.sendmail('xxx',
-                                              email, body)
+            sendmail = smtpObj.sendmail('xxx', email, body)
         smtpObj.quit()
 
 schedule.every().day.at("08:00").do(umbrella)
