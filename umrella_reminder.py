@@ -23,7 +23,7 @@ def umbrella():
         smtpObj.login('xxx', sys.argv[1])
         body = 'Subject = rain\nDon\'t forget to take your umbrella today.'
         for email in emails:
-            sendmail = smtpObj.sendmail('my_email_address@gmail.com',
+            sendmail = smtpObj.sendmail('xxx',
                                               email, body)
         smtpObj.quit()
 
