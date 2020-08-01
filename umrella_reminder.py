@@ -1,8 +1,3 @@
-'''''
-Checks weather every morning and if it's going to be rainy it sends 
-e-mails to bring umbrella.
-'''''
-
 import json, requests, smtplib, schedule
 
 def umbrella():
