@@ -1,11 +1,11 @@
 import json, requests, smtplib, schedule
 
 def umbrella():
-    '''''
+    """
     Checks the weather of desired location at openweathermap.org every morning 
     at 8 AM and if forecast is going to be rainy it logs into an e-mail and 
     sends e-mails for bringing an umbrella.
-    '''''
+    """
     
     location = 'Brno, Czech republic'
     url ='http://api.openweathermap.org/data/2.5/forecast/daily?q=%s&cnt=3' % \
