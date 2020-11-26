@@ -2,9 +2,9 @@ import json, requests, smtplib, schedule
 
 def umbrella():
     """
-    Checks the weather of desired location at openweathermap.org every morning 
-    at 8 AM and if forecast is going to be rainy it logs into an e-mail and 
-    sends e-mails for bringing an umbrella.
+    Checks weather of a desired location at openweathermap.org every morning 
+    at 8 AM and if a forecast is going to be rainy, it logs into an e-mail and 
+    sends an e-mails to take an umbrella.
     """
     
     location = 'Brno, Czech republic'
