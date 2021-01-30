@@ -23,5 +23,5 @@ def umbrella():
             sendmail = smtpObj.sendmail('xxx', email, body)
         smtpObj.quit()
       
-if _name_ == '_main_':
+if __name__ == '__main__':
     schedule.every().day.at("08:00").do(umbrella)
